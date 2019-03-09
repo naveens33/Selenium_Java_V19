@@ -1,0 +1,32 @@
+css
+------
+
+a) elementname[attribute='value']
+
+input[id='user_email']
+
+b)[attribute='value']
+
+[id='user_email']
+
+c)elementname[attribute*='value']
+
+input[id*='er_emai']
+
+input[id^='user']
+
+contains- *=
+starts-with- ^=
+ends-with- $=
+
+d)parent[]>child[]
+
+div[class='page-header']>h3
+
+e)
+
+div.page-header>h3
+
+input#user_email
+
+#user_email
