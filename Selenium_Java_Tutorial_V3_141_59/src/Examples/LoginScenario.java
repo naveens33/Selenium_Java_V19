@@ -21,8 +21,8 @@ public class LoginScenario {
 		{
 			driver.findElement(By.id("user_login")).sendKeys("username");
 			driver.findElement(By.id("user_password")).sendKeys("password");
-			
 			driver.findElement(By.name("submit")).click();
+			
 		}
 		else
 		{
