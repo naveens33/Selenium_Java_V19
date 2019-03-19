@@ -11,7 +11,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 
-public class PurchaseForeignCurrency {
+public class PurchaseForeignCurrency1 {
 
 	public static void main(String[] args) {
 		

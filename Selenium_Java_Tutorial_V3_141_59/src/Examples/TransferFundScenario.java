@@ -42,7 +42,7 @@ public class TransferFundScenario {
 		obj.verifyBool(false,driver.findElement(By.cssSelector("#tf_fromAccountId")).isEnabled());
 	
 		obj.verifyBool(false,driver.findElement(By.cssSelector("#tf_toAccountId")).isEnabled());
-		
+			
 		driver.findElement(By.cssSelector("#btn_submit")).click();
 		String text=driver.findElement(By.xpath("//*[@id=\"transfer_funds_content\"]/div/div/div[1]")).getText();
 		obj.verifyText("You successfully submitted your transaction.", text);
