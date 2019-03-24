@@ -1,13 +1,12 @@
 package junittestexamples;
 
-import static org.junit.Assert.*;
-
 import java.util.Arrays;
 import java.util.Collection;
 import java.util.List;
 
 import org.junit.After;
 import org.junit.AfterClass;
+import org.junit.Assert;
 import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
@@ -20,9 +19,6 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.interactions.Actions;
-
-import junit.framework.Assert;
 
 @RunWith(Parameterized.class)
 public class SearchScenarioParam {
@@ -41,7 +37,10 @@ public class SearchScenarioParam {
 	
     @Parameters
     public static Collection<Object[]> data() {
-        Object[][] data = new Object[][] { { "Account" ,2 },{"Map",1} };
+        Object[][] data = new Object[][] { 
+        	{"Account" ,2},
+        	{"Map",1} 
+        	};
         return Arrays.asList(data);
     }
     
@@ -58,7 +57,6 @@ public class SearchScenarioParam {
 	public void setUp() throws Exception {
 	}
 
-	@SuppressWarnings("deprecation")
 	@Test
 	public void test() {
 		driver.findElement(By.id("searchTerm")).sendKeys(searchterm);
@@ -85,6 +83,6 @@ public class SearchScenarioParam {
 
 	@AfterClass
 	public static void tearDownAfterClass() throws Exception {
-		//driver.quit();
+		driver.quit();
 	}
 }
