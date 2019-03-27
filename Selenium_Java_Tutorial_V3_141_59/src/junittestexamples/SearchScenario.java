@@ -1,6 +1,6 @@
 package junittestexamples;
 
-import static org.junit.Assert.*;
+import org.junit.Assert;
 
 import java.util.List;
 
@@ -16,7 +16,6 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
 
-import junit.framework.Assert;
 
 public class SearchScenario {
 
