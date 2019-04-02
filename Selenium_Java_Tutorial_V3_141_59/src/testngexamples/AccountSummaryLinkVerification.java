@@ -5,6 +5,9 @@ import org.testng.annotations.Test;
 
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
+import org.testng.annotations.DataProvider;
+import org.testng.annotations.Optional;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeClass;
@@ -48,17 +51,32 @@ public class AccountSummaryLinkVerification {
 	  Assert.assertEquals("Brokerage",selectedvalue);
 	}
 	
-	@Test(priority=2)
-	  public void verifyCreditAccountsLinks() {
-	  driver.findElement(By.xpath("//a[text()='Checking']")).click();
+	@Test(priority=2, dataProvider="Link")
+	  public void verifyCreditAccountsLinks(String Link) {
+	  driver.findElement(By.xpath("//a[text()='"+Link+"']")).click();
 	  
 	  WebDriverWait wait=new WebDriverWait(driver, 3);
 	  
 	  WebElement accountele=wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("aa_accountId")));
 	  Select account=new Select(accountele);
 	  String selectedvalue=account.getFirstSelectedOption().getText();
-	  Assert.assertEquals("Checking",selectedvalue);
+	  Assert.assertEquals(Link,selectedvalue);
 	}
+	
+	@Test(priority=3)
+	@Parameters("Link")
+	  public void verifyLoanAccountsLinks(@Optional("Loan") String Link) {
+		System.out.println(Link);
+	  driver.findElement(By.xpath("//a[text()='"+Link+"']")).click();
+	  
+	  WebDriverWait wait=new WebDriverWait(driver, 3);
+	  
+	  WebElement accountele=wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("aa_accountId")));
+	  Select account=new Select(accountele);
+	  String selectedvalue=account.getFirstSelectedOption().getText();
+	  Assert.assertEquals(Link,selectedvalue);
+	}
+	
   @BeforeMethod
   public void beforeMethod() {
   }
@@ -73,4 +91,12 @@ public class AccountSummaryLinkVerification {
 	  //driver.quit();
   }
 
+  @DataProvider(name="Link")
+     public Object[] getData(){
+     return new Object[]
+     	{
+             "Checking",
+             "Credit Card"
+         };
+  }
 }

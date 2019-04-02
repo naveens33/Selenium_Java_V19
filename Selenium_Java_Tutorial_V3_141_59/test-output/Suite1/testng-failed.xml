@@ -1,19 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite1]">
-  <test thread-count="5" name="testcase1(failed)">
+  <test thread-count="5" name="testcase2(failed)">
     <classes>
-      <class name="testngsnippet.TestNgTestCase1">
+      <class name="testngexamples.VerifyTooltip">
         <methods>
-          <include name="beforeClass"/>
-          <include name="f7"/>
+          <include name="LoginPageTooltip"/>
           <include name="beforeMethod"/>
           <include name="afterTest"/>
-          <include name="afterClass"/>
           <include name="beforeTest"/>
           <include name="afterMethod"/>
         </methods>
-      </class> <!-- testngsnippet.TestNgTestCase1 -->
+      </class> <!-- testngexamples.VerifyTooltip -->
     </classes>
-  </test> <!-- testcase1(failed) -->
+  </test> <!-- testcase2(failed) -->
 </suite> <!-- Failed suite [Suite1] -->

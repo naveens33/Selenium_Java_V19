@@ -5,7 +5,7 @@
     <classes>
       <class name="testngexamples.AccountSummaryLinkVerification">
         <methods>
-          <include name="verifyInvestmentAccountsLinks"/>
+          <include name="verifyLoanAccountsLinks"/>
           <include name="beforeMethod"/>
           <include name="afterTest"/>
           <include name="beforeTest"/>
