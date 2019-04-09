@@ -12,4 +12,10 @@
          <class name = "testngsnippet.TestNgTestCase2" />
       </classes>
    </test>
+      <test name = "testcase3">
+      <parameter name="searchterm" value="Account" />
+      <classes>
+         <class name = "testngsnippet.TestNgPara" />
+      </classes>
+   </test>
 </suite>  

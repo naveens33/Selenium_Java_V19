@@ -92,10 +92,10 @@ public class AccountSummaryLinkVerification {
   }
 
   @DataProvider(name="Link")
-     public Object[] getData(){
-     return new Object[]
+     public String[] getData(){
+     return new String[]
      	{
-             "Checking",
+     		 "Checking",
              "Credit Card"
          };
   }
