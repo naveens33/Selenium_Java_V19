@@ -20,13 +20,13 @@ public class ReadExcelData {
 	
 		XSSFSheet sheet=workbook.getSheet("PayeeDetails");
 		
-		String data[][]=new String[sheet.getLastRowNum()-1][sheet.getRow(0).getLastCellNum()];
+		String data[][]=new String[sheet.getLastRowNum()][sheet.getRow(0).getLastCellNum()];
 		
-		for(int i=1;i<sheet.getLastRowNum();i++)
+		for(int i=0;i<sheet.getLastRowNum();i++)
 		{
 			for(int j=0;j<sheet.getRow(1).getLastCellNum();j++)
 			{
-				data[i-1][j]=sheet.getRow(i).getCell(j).toString();
+				data[i][j]=sheet.getRow(i+1).getCell(j).toString();
 			}
 		}
 		return data;
