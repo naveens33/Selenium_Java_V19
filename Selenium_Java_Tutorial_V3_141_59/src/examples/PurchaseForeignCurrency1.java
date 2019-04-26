@@ -10,6 +10,8 @@ import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import bsh.Console;
+
 
 public class PurchaseForeignCurrency1 {
 
@@ -36,20 +38,48 @@ public class PurchaseForeignCurrency1 {
 			
 			WebDriverWait wait=new WebDriverWait(driver, 3);
 			
-			Thread.sleep(3000);
+			//Thread.sleep(3000);
 			
 			WebElement currencyele=wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//select[@id='pc_currency']")));
 			Select currencyselect=new Select(currencyele);
 			currencyselect.selectByVisibleText("Denmark (krone)");
 			
-			driver.findElement(By.xpath("//input[@id='pc_amount']")).sendKeys("100");
+			WebElement sellrateele=wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("sp_sell_rate")));
+			double actualsellrate=Double.parseDouble(sellrateele.getText().split(" ")[4]);
+			System.out.println(actualsellrate);
+			
+			double amount=100;
+			
+			double expectedval=actualsellrate*amount;
+			
+			driver.findElement(By.xpath("//input[@id='pc_amount']")).sendKeys(""+amount);
+			
+			
+			WebElement radiobutton =driver.findElement(By.id("pc_inDollars_false"));
+			if(radiobutton.isSelected()==false)
+			{
+				radiobutton.click();
+			}
+			
+			driver.findElement(By.id("pc_calculate_costs")).click();
+			
+			WebElement conversionamtele=wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("pc_conversion_amount")));
+			double convamt=Double.parseDouble(conversionamtele.getText().split(" ")[4]);
+			
+			System.out.println("Expected: "+expectedval+"\t"+"Actual: "+convamt);
+			if(expectedval!=convamt)
+			{
+				System.out.println("TestCase failed");
+			}
 		}
 		catch(Exception e)
 		{
 			System.out.println(e);
 		}
-		
-		driver.quit();
+		finally
+		{
+			//driver.quit();	
+		}
 	}
 
 }
