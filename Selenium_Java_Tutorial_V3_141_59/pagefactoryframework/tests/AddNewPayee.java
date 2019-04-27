@@ -10,10 +10,10 @@ import org.openqa.selenium.support.PageFactory;
 import driver.BaseClass;
 import pages.HomePage;
 
-public class AddNewPayee extends BaseClass {
+public class AddNewPayee{
 
 	@BeforeClass
-	public static void setUpBeforeClass() throws Exception {
+	public static void setUpBeforeClass(){
 		BaseClass baseclass=new BaseClass();
 		HomePage homepage= PageFactory.initElements(baseclass.driver, HomePage.class);
 		homepage.clickOnSignInButton();

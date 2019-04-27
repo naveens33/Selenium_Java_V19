@@ -14,8 +14,10 @@ public class HomePage {
 		this.driver=driver;
 	}
 	
-	 @FindBy(how=How.ID, using="signin_button") WebElement signInButton;
-	 @FindBy(how=How.XPATH, using="//strong[text()='Online Banking']") WebElement onlineBankingLink;
+	 @FindBy(how=How.ID, using="signin_button") 
+	 WebElement signInButton;
+	 @FindBy(how=How.XPATH, using="//strong[text()='Online Banking']") 
+	 WebElement onlineBankingLink;
 	 
 	 public void clickOnSignInButton()
 	 {
