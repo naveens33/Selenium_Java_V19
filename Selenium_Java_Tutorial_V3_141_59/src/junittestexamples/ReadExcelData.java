@@ -29,6 +29,8 @@ public class ReadExcelData {
 				data[i][j]=sheet.getRow(i+1).getCell(j).toString();
 			}
 		}
+        workbook.close();
+        file.close();
 		return data;
 	}
 }

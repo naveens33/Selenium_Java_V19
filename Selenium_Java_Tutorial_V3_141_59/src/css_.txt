@@ -23,6 +23,8 @@ d)parent[]>child[]
 
 div[class='page-header']>h3
 
+div[class="row margin7top"]:nth-child(1)>div[class="span4"]:nth-child(2)
+
 e)
 
 div.page-header>h3

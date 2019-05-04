@@ -26,7 +26,9 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
 
 @RunWith(Parameterized.class)
 public class AddNewPayeeScenario {
@@ -86,5 +88,14 @@ public class AddNewPayeeScenario {
 		driver.findElement(By.id("np_new_payee_account")).sendKeys(account);
 		driver.findElement(By.id("np_new_payee_details")).sendKeys(payeedetails);
 		driver.findElement(By.id("add_new_payee")).click();
+		
+		
+		Assert.assertEquals(driver.findElement(By.id("alert_content")).getText().contains(payeename),true);
+		
+		WebElement payeeele=wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("sp_payee")));
+		Select payeesel=new Select(payeeele);
+		List<WebElement> options=payeesel.getOptions();
+		
+		Assert.assertEquals(options.contains(payeename),true);
 	}
 }
