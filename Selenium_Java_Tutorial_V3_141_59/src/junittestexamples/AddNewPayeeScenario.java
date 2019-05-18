@@ -95,7 +95,12 @@ public class AddNewPayeeScenario {
 		WebElement payeeele=wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("sp_payee")));
 		Select payeesel=new Select(payeeele);
 		List<WebElement> options=payeesel.getOptions();
+		List<String> option_text = new ArrayList<String>();
+		for(WebElement option : options)
+		{
+			option_text.add(option.getText());
+		}
 		
-		Assert.assertEquals(options.contains(payeename),true);
+		Assert.assertEquals(true, option_text.contains(payeename));
 	}
 }

@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite1]">
-  <test thread-count="5" name="testcase1(failed)">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testngsnippet.TestNgTestCase1">
+      <class name="sample.TestNgAnnotationExample">
         <methods>
-          <include name="beforeClass"/>
           <include name="f7"/>
           <include name="beforeMethod"/>
-          <include name="afterTest"/>
-          <include name="afterClass"/>
+          <include name="beforeClass"/>
           <include name="beforeTest"/>
           <include name="afterMethod"/>
+          <include name="afterTest"/>
+          <include name="afterClass"/>
         </methods>
-      </class> <!-- testngsnippet.TestNgTestCase1 -->
+      </class> <!-- sample.TestNgAnnotationExample -->
     </classes>
-  </test> <!-- testcase1(failed) -->
-</suite> <!-- Failed suite [Suite1] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
