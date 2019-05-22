@@ -7,12 +7,6 @@ import org.openqa.selenium.support.How;
 
 public class LoginPage {
 
-	WebDriver driver=null;
-	
-	public LoginPage(WebDriver driver)
-	{
-		this.driver=driver;
-	}
 
 	 @FindBy(how=How.ID, using="user_login") 
 	 WebElement LoginTextField;
@@ -33,8 +27,5 @@ public class LoginPage {
 	 {
 		 SignInButton.click();
 	 }
-	 
-	 public String getTitle() {
-		 return driver.getTitle();
-	 }
+
 }

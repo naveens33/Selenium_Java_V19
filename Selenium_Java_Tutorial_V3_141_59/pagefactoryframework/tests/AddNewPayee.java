@@ -9,6 +9,7 @@ import org.openqa.selenium.support.PageFactory;
 
 import driver.BaseClass;
 import org.junit.Assert;
+
 import pages.HomePage;
 import pages.LoginPage;
 
@@ -20,7 +21,7 @@ public class AddNewPayee{
 		HomePage homepage= PageFactory.initElements(baseclass.driver, HomePage.class);
 		homepage.clickOnSignInButton();
 		LoginPage loginpage=PageFactory.initElements(baseclass.driver, LoginPage.class);
-		Assert.assertEquals("Zero - Log in", loginpage.getTitle());
+		Assert.assertEquals("Zero - Log in", baseclass.driver.getTitle());
 		loginpage.EnterCredential("username", "password");
 		loginpage.ClickOnSignInButton();
 	}

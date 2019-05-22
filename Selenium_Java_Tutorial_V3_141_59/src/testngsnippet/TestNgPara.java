@@ -7,7 +7,7 @@ import org.testng.annotations.Test;
 public class TestNgPara {
   @Test
   @Parameters("searchterm")
-  public void f(@Optional("Loan") String searchterm) {
-	  System.out.println(searchterm);
+  public void f(@Optional("Loan") String value) {
+	  System.out.println(value);
   }
 }
