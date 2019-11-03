@@ -3,17 +3,28 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite1]">
   <test thread-count="5" name="testcase1(failed)">
     <classes>
-      <class name="testngsnippet.TestNgTestCase1">
+      <class name="testng_samepl.Testng_TestCase1">
         <methods>
-          <include name="beforeClass"/>
           <include name="f7"/>
-          <include name="beforeMethod"/>
-          <include name="afterTest"/>
           <include name="afterClass"/>
+          <include name="beforeMethod"/>
+          <include name="beforeClass"/>
           <include name="beforeTest"/>
           <include name="afterMethod"/>
+          <include name="afterTest"/>
         </methods>
-      </class> <!-- testngsnippet.TestNgTestCase1 -->
+      </class> <!-- testng_samepl.Testng_TestCase1 -->
     </classes>
   </test> <!-- testcase1(failed) -->
+  <test thread-count="5" name="testcase2(failed)">
+    <classes>
+      <class name="testng_samepl.Testng_TestCase2">
+        <methods>
+          <include name="f"/>
+          <include name="beforeSuite"/>
+          <include name="afterSuite"/>
+        </methods>
+      </class> <!-- testng_samepl.Testng_TestCase2 -->
+    </classes>
+  </test> <!-- testcase2(failed) -->
 </suite> <!-- Failed suite [Suite1] -->

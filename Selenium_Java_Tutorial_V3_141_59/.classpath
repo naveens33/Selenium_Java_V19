@@ -32,5 +32,7 @@
 	<classpathentry kind="lib" path="D:/Naveen/Selenium/poi-bin-4.0.1-20181203/poi-4.0.1/poi-scratchpad-4.0.1.jar"/>
 	<classpathentry kind="lib" path="D:/Naveen/Selenium/poi-bin-4.0.1-20181203/poi-4.0.1/ooxml-lib/curvesapi-1.05.jar"/>
 	<classpathentry kind="lib" path="D:/Naveen/Selenium/poi-bin-4.0.1-20181203/poi-4.0.1/ooxml-lib/xmlbeans-3.0.2.jar"/>
+	<classpathentry kind="lib" path="D:/Naveen/Selenium/ashot-1.5.3.jar"/>
+	<classpathentry kind="lib" path="D:/Naveen/Selenium/jar_files/selenium-shutterbug-0.3.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

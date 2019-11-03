@@ -1,6 +1,12 @@
 package examples;
 
+import java.awt.Rectangle;
+import java.awt.Robot;
+import java.awt.Toolkit;
+import java.awt.image.BufferedImage;
 import java.io.File;
+
+import javax.imageio.ImageIO;
 
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.Alert;
@@ -39,19 +45,22 @@ public class PurchaseForeignCurrency2 {
 			WebDriverWait wait=new WebDriverWait(driver, 3);
 			WebElement calculate_button=wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("pc_calculate_costs")));
 			calculate_button.click();
-			
-
         
 			Alert alertbox=driver.switchTo().alert();
 			
 			String message=alertbox.getText();
 			verifyText("Please, ensure that you have filled all the required fields with valid values.12",message);
+			 
+			BufferedImage image = new Robot().createScreenCapture(new Rectangle(Toolkit.getDefaultToolkit().getScreenSize()));
+			    ImageIO.write(image, "png", new File("d:\\bla.png"));
+			    
 			alertbox.accept();
+			
 			TakesScreenshot scrShot=((TakesScreenshot)driver);
 			File SrcFile=scrShot.getScreenshotAs(OutputType.FILE);
             File DestFile=new File("D:\\screenshotjava.png");
-            
             FileUtils.copyFile(SrcFile, DestFile);
+            
 			
 		}
 		catch(Exception e)

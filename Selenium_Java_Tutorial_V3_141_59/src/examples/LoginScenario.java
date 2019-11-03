@@ -5,6 +5,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
+
+
 public class LoginScenario {
 
 	public static void main(String[] args) {
@@ -29,7 +31,6 @@ public class LoginScenario {
 			System.out.println("You are in the wrong page");
 		}
 		driver.close();
-		
 	}
 
 }
