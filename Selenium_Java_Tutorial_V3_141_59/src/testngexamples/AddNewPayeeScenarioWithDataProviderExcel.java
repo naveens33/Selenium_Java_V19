@@ -20,7 +20,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 
-public class AddNewPayeeScenarioWithDataProvider {
+public class AddNewPayeeScenarioWithDataProviderExcel {
 	
 	WebDriver driver;
 	@BeforeClass
@@ -78,9 +78,7 @@ public class AddNewPayeeScenarioWithDataProvider {
   @DataProvider
   public Object[][] dp() throws IOException
   {
-	  	return  new Object[][] {
-	  		new Object[] {"Prem Kumar","Bangalore","234845646","Brother"},
-	  		new Object[] {"Somi","Mangalore","89789458","Friend"},
-	  	};
+	  ReadExcelData obj=new ReadExcelData();
+	  return obj.getdata();
   }
 }
