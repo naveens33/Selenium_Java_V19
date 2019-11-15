@@ -1,6 +1,7 @@
 package testngsnippet;
 
 import org.testng.annotations.Test;
+import org.testng.asserts.SoftAssert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
 import org.openqa.selenium.NoSuchElementException;
@@ -61,6 +62,8 @@ public class TestNgAnnotations {
 
   @Test(enabled=false)
   public void f4() {
+	  SoftAssert obj=new SoftAssert();
+	  obj.assertEquals(5, 6);
 	  System.out.println("-Test4");
   }  
   

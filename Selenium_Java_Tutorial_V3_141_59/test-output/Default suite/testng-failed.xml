@@ -3,15 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testng_samepl.AddNewPayeeScenarioWithDataProvider">
+      <class name="tests.AddNewPayee">
         <methods>
-          <include name="afterMethod"/>
-          <include name="beforeClass"/>
+          <include name="beforeTest"/>
+          <include name="addNewPayee"/>
           <include name="beforeMethod"/>
-          <include name="test1" invocation-numbers="0 1"/>
-          <include name="afterClass"/>
         </methods>
-      </class> <!-- testng_samepl.AddNewPayeeScenarioWithDataProvider -->
+      </class> <!-- tests.AddNewPayee -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

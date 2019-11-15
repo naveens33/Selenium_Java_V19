@@ -2,7 +2,7 @@
 <classpath>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
 	<classpathentry kind="src" path="src"/>
-	<classpathentry kind="src" path="pagefactoryframework"/>
+	<classpathentry kind="src" path="pomframework"/>
 	<classpathentry kind="lib" path="D:/Naveen/Selenium/selenium-java-3.141.59/client-combined-3.141.59.jar"/>
 	<classpathentry kind="lib" path="D:/Naveen/Selenium/selenium-java-3.141.59/client-combined-3.141.59-sources.jar"/>
 	<classpathentry kind="lib" path="D:/Naveen/Selenium/selenium-java-3.141.59/libs/byte-buddy-1.8.15.jar"/>
@@ -34,5 +34,16 @@
 	<classpathentry kind="lib" path="D:/Naveen/Selenium/poi-bin-4.0.1-20181203/poi-4.0.1/ooxml-lib/xmlbeans-3.0.2.jar"/>
 	<classpathentry kind="lib" path="D:/Naveen/Selenium/ashot-1.5.3.jar"/>
 	<classpathentry kind="lib" path="D:/Naveen/Selenium/jar_files/selenium-shutterbug-0.3.jar"/>
+	<classpathentry kind="lib" path="D:/jar_files/bson-3.3.0.jar"/>
+	<classpathentry kind="lib" path="D:/jar_files/commons-codec-1.9.jar"/>
+	<classpathentry kind="lib" path="D:/jar_files/commons-logging-1.2.jar"/>
+	<classpathentry kind="lib" path="D:/jar_files/extentreports-4.0.9.jar" sourcepath="C:/Users/naveen.s/.m2/repository/com/aventstack/extentreports/4.0.9/extentreports-4.0.9-sources.jar"/>
+	<classpathentry kind="lib" path="D:/jar_files/freemarker-2.3.23.jar"/>
+	<classpathentry kind="lib" path="D:/jar_files/gson-2.8.5.jar"/>
+	<classpathentry kind="lib" path="D:/jar_files/httpclient-4.5.2.jar"/>
+	<classpathentry kind="lib" path="D:/jar_files/httpcore-4.4.4.jar"/>
+	<classpathentry kind="lib" path="D:/jar_files/httpmime-4.5.2.jar"/>
+	<classpathentry kind="lib" path="D:/jar_files/mongodb-driver-3.3.0.jar"/>
+	<classpathentry kind="lib" path="D:/jar_files/mongodb-driver-core-3.3.0.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

@@ -50,12 +50,14 @@ public class PurchaseForeignCurrency2 {
 			
 			String message=alertbox.getText();
 			verifyText("Please, ensure that you have filled all the required fields with valid values.12",message);
-			 
+
+			//Take Screenshot with Robot class
 			BufferedImage image = new Robot().createScreenCapture(new Rectangle(Toolkit.getDefaultToolkit().getScreenSize()));
 			    ImageIO.write(image, "png", new File("d:\\bla.png"));
 			    
 			alertbox.accept();
 			
+			//Take Screenshot with getScreenshotAs method
 			TakesScreenshot scrShot=((TakesScreenshot)driver);
 			File SrcFile=scrShot.getScreenshotAs(OutputType.FILE);
             File DestFile=new File("D:\\screenshotjava.png");
