@@ -22,6 +22,7 @@ public class ExtentDemo {
 	public ExtentHtmlReporter htmlReporter;
 	public ExtentReports report;
 	public ExtentTest test;
+	
 
 	@BeforeTest
 	public void beforeTest() {

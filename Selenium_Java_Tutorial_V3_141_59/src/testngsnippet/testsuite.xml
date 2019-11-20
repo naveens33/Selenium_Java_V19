@@ -2,20 +2,23 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 
 <suite name = "Suite1">
+<parameter name="suite-param" value="suite level parameter" />
    <test name = "testcase1">
       <classes>
          <class name = "testngsnippet.TestNgTestCase1" />
       </classes>
    </test>
-   <test name = "testcase2">
+  <!--<test name = "testcase2">
       <classes>
          <class name = "testngsnippet.TestNgTestCase2" />
       </classes>
-   </test>
+   </test>-->
       <test name = "testcase3">
       <parameter name="searchterm" value="Account" />
+      <parameter name="browsername" value="Chrome" />
       <classes>
          <class name = "testngsnippet.TestNgPara" />
+         <class name = "testngsnippet.TestNgTestCase2" />
       </classes>
    </test>
 </suite>  

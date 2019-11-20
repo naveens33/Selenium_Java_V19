@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>testcase1</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>2/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>5/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Wed Nov 13 22:36:19 IST 2019</td>
+<td>Started on:</td><td>Wed Nov 20 13:42:21 IST 2019</td>
 </tr>
-<tr><td>Total time:</td><td>11 seconds (11500 ms)</td>
+<tr><td>Total time:</td><td>1 seconds (1109 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,55 +75,48 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='testngexamples.ParallelTestExecution.executSessionThree()'><b>executSessionThree</b><br>Test class: testngexamples.ParallelTestExecution</td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;*[name=&apos;uid&apos;]&quot;}
-  (Session info: chrome=78.0.3904.97)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:48&apos;
-System info: host: &apos;INBLRNB0299&apos;, ip: &apos;192.168.0.2&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_181&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 78.0.3904.97, chrome: {chromedriverVersion: 78.0.3904.70 (edb9c9f3de024..., userDataDir: C:\Users\naveen.s\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:32921}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 8ca87d95973068d533420115e04f88c2
-*** Element info: {Using=name, value=uid}
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:404)
-	at org.openqa.selenium.By$ByName.findElement(By.java:284)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at testngexamples.ParallelTestExecution.executSessionThree(ParallelTestExecution.java:35)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at java.lang.Thread.run(Thread.java:748)
-... Removed 14 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace558566689", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace558566689'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;*[name=&apos;uid&apos;]&quot;}
-  (Session info: chrome=78.0.3904.97)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:48&apos;
-System info: host: &apos;INBLRNB0299&apos;, ip: &apos;192.168.0.2&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_181&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 78.0.3904.97, chrome: {chromedriverVersion: 78.0.3904.70 (edb9c9f3de024..., userDataDir: C:\Users\naveen.s\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:32921}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 8ca87d95973068d533420115e04f88c2
-*** Element info: {Using=name, value=uid}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:404)
-	at org.openqa.selenium.By$ByName.findElement(By.java:284)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at testngexamples.ParallelTestExecution.executSessionThree(ParallelTestExecution.java:35)
+<td title='testngsnippet.TestNgTestCase1.f7()'><b>f7</b><br>Test class: testngsnippet.TestNgTestCase1</td>
+<td><div><pre>org.testng.internal.thread.ThreadTimeoutException: Method testngsnippet.TestNgTestCase1.f7() didn&apos;t finish within the time-out 1000
+</pre></div><a href='#' onClick='toggleBox("stack-trace55331187", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace55331187'><pre>org.testng.internal.thread.ThreadTimeoutException: Method testngsnippet.TestNgTestCase1.f7() didn&apos;t finish within the time-out 1000
+</pre></div></td>
+<td>1</td>
+<td>testngsnippet.TestNgTestCase1@754ba872</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='testngsnippet.TestNgTestCase1.f1()'><b>f1</b><br>Test class: testngsnippet.TestNgTestCase1</td>
+<td></td>
+<td>0</td>
+<td>testngsnippet.TestNgTestCase1@754ba872</td></tr>
+<tr>
+<td title='testngsnippet.TestNgTestCase1.f2()'><b>f2</b><br>Test class: testngsnippet.TestNgTestCase1</td>
+<td></td>
+<td>0</td>
+<td>testngsnippet.TestNgTestCase1@754ba872</td></tr>
+<tr>
+<td title='testngsnippet.TestNgTestCase1.f3()'><b>f3</b><br>Test class: testngsnippet.TestNgTestCase1</td>
+<td></td>
+<td>0</td>
+<td>testngsnippet.TestNgTestCase1@754ba872</td></tr>
+<tr>
+<td title='testngsnippet.TestNgTestCase1.f4()'><b>f4</b><br>Test class: testngsnippet.TestNgTestCase1</td>
+<td></td>
+<td>0</td>
+<td>testngsnippet.TestNgTestCase1@754ba872</td></tr>
+<tr>
+<td title='testngsnippet.TestNgTestCase1.f6()'><b>f6</b><br>Test class: testngsnippet.TestNgTestCase1</td>
+<td><div><pre>java.util.NoSuchElementException
+	at testngsnippet.TestNgTestCase1.f6(TestNgTestCase1.java:73)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1399499405", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1399499405'><pre>java.util.NoSuchElementException
+	at testngsnippet.TestNgTestCase1.f6(TestNgTestCase1.java:73)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -134,30 +127,24 @@ Session ID: 8ca87d95973068d533420115e04f88c2
 	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at java.lang.Thread.run(Thread.java:748)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>8</td>
-<td>testngexamples.ParallelTestExecution@47c62251</td></tr>
-</table><p>
-<table width='100%' border='1' class='invocation-passed'>
-<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
-<tr>
-<td title='testngexamples.ParallelTestExecution.executSessionOne()'><b>executSessionOne</b><br>Test class: testngexamples.ParallelTestExecution</td>
-<td></td>
-<td>11</td>
-<td>testngexamples.ParallelTestExecution@47c62251</td></tr>
-<tr>
-<td title='testngexamples.ParallelTestExecution.executeSessionTwo()'><b>executeSessionTwo</b><br>Test class: testngexamples.ParallelTestExecution</td>
-<td></td>
-<td>10</td>
-<td>testngexamples.ParallelTestExecution@47c62251</td></tr>
+<td>0</td>
+<td>testngsnippet.TestNgTestCase1@754ba872</td></tr>
 </table><p>
 </body>
 </html>

@@ -1,14 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite thread-count="3" guice-stage="DEVELOPMENT" name="Failed suite [Suite1]" parallel="methods">
-  <test thread-count="3" name="testcase1(failed)" parallel="methods">
-    <parameter name="Link" value="Loan"/>
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite1]">
+  <parameter name="suite-param" value="suite level parameter"/>
+  <test thread-count="5" name="testcase1(failed)">
     <classes>
-      <class name="testngexamples.ParallelTestExecution">
+      <class name="testngsnippet.TestNgTestCase1">
         <methods>
-          <include name="executSessionThree"/>
+          <include name="beforeClass"/>
+          <include name="f7"/>
+          <include name="beforeMethod"/>
+          <include name="afterTest"/>
+          <include name="afterClass"/>
+          <include name="beforeTest"/>
+          <include name="afterMethod"/>
         </methods>
-      </class> <!-- testngexamples.ParallelTestExecution -->
+      </class> <!-- testngsnippet.TestNgTestCase1 -->
     </classes>
   </test> <!-- testcase1(failed) -->
+  <test thread-count="5" name="testcase3(failed)">
+    <parameter name="searchterm" value="Account"/>
+    <parameter name="browsername" value="Chrome"/>
+    <classes>
+      <class name="testngsnippet.TestNgPara">
+        <methods>
+          <include name="f"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- testngsnippet.TestNgPara -->
+    </classes>
+  </test> <!-- testcase3(failed) -->
 </suite> <!-- Failed suite [Suite1] -->

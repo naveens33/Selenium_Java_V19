@@ -5,9 +5,13 @@
     <classes>
       <class name="tests.AddNewPayee">
         <methods>
+          <include name="afterMethod"/>
+          <include name="afterSuite"/>
+          <include name="afterTest"/>
+          <include name="beforeSuite"/>
           <include name="beforeTest"/>
-          <include name="addNewPayee"/>
           <include name="beforeMethod"/>
+          <include name="test02"/>
         </methods>
       </class> <!-- tests.AddNewPayee -->
     </classes>

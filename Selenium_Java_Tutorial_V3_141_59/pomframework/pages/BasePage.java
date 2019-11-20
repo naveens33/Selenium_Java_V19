@@ -13,7 +13,7 @@ public class BasePage {
 
 	public static WebDriver driver;
 	
-	public BasePage() {}
+	BasePage(){}
 	
 	public BasePage(WebDriver driver)
 	{
