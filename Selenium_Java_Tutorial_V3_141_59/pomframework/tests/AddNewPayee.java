@@ -48,7 +48,7 @@ public class AddNewPayee extends BaseTest {
 
 @Test(dataProvider = "dp")
   public void addNewPayee(String p1, String p2,String p3,String p4 ) {
-	test = report.createTest("Add New Payee to Zero Bank site for test data "+p1);
+	test = report.createTest("Add New Payee for test data "+p1);
 	paybills.doAddNewPayee(p1,"", "", "");
   }
 
