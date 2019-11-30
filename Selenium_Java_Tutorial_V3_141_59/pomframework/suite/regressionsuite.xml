@@ -13,4 +13,9 @@
          <class name = "tests.AddNewPayee" />
       </classes>
    </test>
+   <test name="MediaLinkVerification">
+   <classes>
+   	<class name="tests.MediaLinksVerfication"/>
+   </classes>
+   </test>
 </suite>  

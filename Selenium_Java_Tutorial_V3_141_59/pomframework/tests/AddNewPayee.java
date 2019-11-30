@@ -16,6 +16,7 @@ import pages.AccountSummaryPage;
 import pages.BasePage;
 import pages.HomePage;
 import pages.LoginPage;
+import pages.LogoutPage;
 import pages.PayBillsPage;
 import testdata.ReadExcelData;
 
@@ -27,7 +28,6 @@ public class AddNewPayee extends BaseTest {
 	@BeforeTest
 	public void beforeTest(@Optional("username") String uname,@Optional("password") String pword)
 	{
-		new BasePage(getDriver());
 		HomePage home=new HomePage();
 		home.clickSignInButton();
 		//Assert.assertEquals(driver.getTitle(), "Zero - Log in");
@@ -55,7 +55,7 @@ public class AddNewPayee extends BaseTest {
 @Test
 public void test02() throws Exception {
 	test = report.createTest("Sample test");
-	throw(new Exception());
+	Assert.assertEquals(1, 2);
 }
 
 
@@ -69,6 +69,7 @@ public Object[][] dp() throws IOException {
 @AfterTest
 public void afterTest()
 {
-
+	LogoutPage logout= new LogoutPage();
+	logout.doLogout();
 }
 }

@@ -1,34 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" ignored="0" total="5" passed="4">
+<testng-results skipped="0" failed="1" ignored="0" total="6" passed="5">
   <reporter-output>
   </reporter-output>
-  <suite name="Regression" duration-ms="7023" started-at="2019-11-20T08:46:21Z" finished-at="2019-11-20T08:46:28Z">
+  <suite name="Regression" duration-ms="22511" started-at="2019-11-30T12:58:23Z" finished-at="2019-11-30T12:58:45Z">
     <groups>
     </groups>
-    <test name="AddNewPayee" duration-ms="7023" started-at="2019-11-20T08:46:21Z" finished-at="2019-11-20T08:46:28Z">
+    <test name="AddNewPayee" duration-ms="17368" started-at="2019-11-30T12:58:23Z" finished-at="2019-11-30T12:58:40Z">
       <class name="tests.AddNewPayee">
-        <test-method status="PASS" signature="beforeSuite(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:tests.AddNewPayee@598067a5]" name="beforeSuite" is-config="true" duration-ms="28804" started-at="2019-11-20T08:45:53Z" finished-at="2019-11-20T08:46:21Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[http://zero.webappsecurity.com]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[/pomframework/reports/]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeSuite -->
-        <test-method status="PASS" signature="beforeTest(java.lang.String, java.lang.String)[pri:0, instance:tests.AddNewPayee@598067a5]" name="beforeTest" is-config="true" duration-ms="4322" started-at="2019-11-20T08:46:21Z" finished-at="2019-11-20T08:46:26Z">
+        <test-method status="PASS" signature="beforeTest(java.lang.String, java.lang.String)[pri:0, instance:tests.AddNewPayee@598067a5]" name="beforeTest" is-config="true" duration-ms="13405" started-at="2019-11-30T12:58:23Z" finished-at="2019-11-30T12:58:36Z">
           <params>
             <param index="0">
               <value>
@@ -44,11 +23,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:tests.AddNewPayee@598067a5]" name="beforeMethod" is-config="true" duration-ms="110" started-at="2019-11-20T08:46:26Z" finished-at="2019-11-20T08:46:27Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:tests.AddNewPayee@598067a5]" name="beforeMethod" is-config="true" duration-ms="104" started-at="2019-11-30T12:58:38Z" finished-at="2019-11-30T12:58:38Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="addNewPayee(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:tests.AddNewPayee@598067a5]" name="addNewPayee" duration-ms="727" started-at="2019-11-20T08:46:27Z" data-provider="dp" finished-at="2019-11-20T08:46:27Z">
+        <test-method status="PASS" signature="addNewPayee(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:tests.AddNewPayee@598067a5]" name="addNewPayee" duration-ms="761" started-at="2019-11-30T12:58:38Z" data-provider="dp" finished-at="2019-11-30T12:58:38Z">
           <params>
             <param index="0">
               <value>
@@ -74,7 +53,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addNewPayee -->
-        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:tests.AddNewPayee@598067a5]" name="afterMethod" is-config="true" duration-ms="13" started-at="2019-11-20T08:46:27Z" finished-at="2019-11-20T08:46:27Z">
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:tests.AddNewPayee@598067a5]" name="afterMethod" is-config="true" duration-ms="12" started-at="2019-11-30T12:58:38Z" finished-at="2019-11-30T12:58:38Z">
           <params>
             <param index="0">
               <value>
@@ -85,11 +64,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:tests.AddNewPayee@598067a5]" name="beforeMethod" is-config="true" duration-ms="83" started-at="2019-11-20T08:46:27Z" finished-at="2019-11-20T08:46:27Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:tests.AddNewPayee@598067a5]" name="beforeMethod" is-config="true" duration-ms="72" started-at="2019-11-30T12:58:38Z" finished-at="2019-11-30T12:58:38Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="addNewPayee(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:tests.AddNewPayee@598067a5]" name="addNewPayee" duration-ms="141" started-at="2019-11-20T08:46:27Z" data-provider="dp" finished-at="2019-11-20T08:46:27Z">
+        <test-method status="PASS" signature="addNewPayee(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:tests.AddNewPayee@598067a5]" name="addNewPayee" duration-ms="130" started-at="2019-11-30T12:58:38Z" data-provider="dp" finished-at="2019-11-30T12:58:39Z">
           <params>
             <param index="0">
               <value>
@@ -115,7 +94,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addNewPayee -->
-        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:tests.AddNewPayee@598067a5]" name="afterMethod" is-config="true" duration-ms="1" started-at="2019-11-20T08:46:27Z" finished-at="2019-11-20T08:46:27Z">
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:tests.AddNewPayee@598067a5]" name="afterMethod" is-config="true" duration-ms="0" started-at="2019-11-30T12:58:39Z" finished-at="2019-11-30T12:58:39Z">
           <params>
             <param index="0">
               <value>
@@ -126,11 +105,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:tests.AddNewPayee@598067a5]" name="beforeMethod" is-config="true" duration-ms="89" started-at="2019-11-20T08:46:27Z" finished-at="2019-11-20T08:46:28Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:tests.AddNewPayee@598067a5]" name="beforeMethod" is-config="true" duration-ms="86" started-at="2019-11-30T12:58:39Z" finished-at="2019-11-30T12:58:39Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="addNewPayee(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:tests.AddNewPayee@598067a5]" name="addNewPayee" duration-ms="122" started-at="2019-11-20T08:46:28Z" data-provider="dp" finished-at="2019-11-20T08:46:28Z">
+        <test-method status="PASS" signature="addNewPayee(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:tests.AddNewPayee@598067a5]" name="addNewPayee" duration-ms="115" started-at="2019-11-30T12:58:39Z" data-provider="dp" finished-at="2019-11-30T12:58:39Z">
           <params>
             <param index="0">
               <value>
@@ -156,7 +135,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addNewPayee -->
-        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:tests.AddNewPayee@598067a5]" name="afterMethod" is-config="true" duration-ms="0" started-at="2019-11-20T08:46:28Z" finished-at="2019-11-20T08:46:28Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:tests.AddNewPayee@598067a5]" name="beforeMethod" is-config="true" duration-ms="65" started-at="2019-11-30T12:58:39Z" finished-at="2019-11-30T12:58:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:tests.AddNewPayee@598067a5]" name="afterMethod" is-config="true" duration-ms="0" started-at="2019-11-30T12:58:39Z" finished-at="2019-11-30T12:58:39Z">
           <params>
             <param index="0">
               <value>
@@ -167,11 +150,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:tests.AddNewPayee@598067a5]" name="beforeMethod" is-config="true" duration-ms="77" started-at="2019-11-20T08:46:28Z" finished-at="2019-11-20T08:46:28Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="addNewPayee(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:tests.AddNewPayee@598067a5]" name="addNewPayee" duration-ms="111" started-at="2019-11-20T08:46:28Z" data-provider="dp" finished-at="2019-11-20T08:46:28Z">
+        <test-method status="PASS" signature="addNewPayee(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:tests.AddNewPayee@598067a5]" name="addNewPayee" duration-ms="97" started-at="2019-11-30T12:58:39Z" data-provider="dp" finished-at="2019-11-30T12:58:39Z">
           <params>
             <param index="0">
               <value>
@@ -197,7 +176,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addNewPayee -->
-        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:tests.AddNewPayee@598067a5]" name="afterMethod" is-config="true" duration-ms="1" started-at="2019-11-20T08:46:28Z" finished-at="2019-11-20T08:46:28Z">
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:tests.AddNewPayee@598067a5]" name="afterMethod" is-config="true" duration-ms="0" started-at="2019-11-30T12:58:39Z" finished-at="2019-11-30T12:58:39Z">
           <params>
             <param index="0">
               <value>
@@ -208,14 +187,23 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:tests.AddNewPayee@598067a5]" name="beforeMethod" is-config="true" duration-ms="108" started-at="2019-11-20T08:46:28Z" finished-at="2019-11-20T08:46:28Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:tests.AddNewPayee@598067a5]" name="beforeMethod" is-config="true" duration-ms="67" started-at="2019-11-30T12:58:39Z" finished-at="2019-11-30T12:58:39Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="FAIL" signature="test02()[pri:0, instance:tests.AddNewPayee@598067a5]" name="test02" duration-ms="1" started-at="2019-11-20T08:46:28Z" finished-at="2019-11-20T08:46:28Z">
-          <exception class="java.lang.Exception">
+        <test-method status="FAIL" signature="test02()[pri:0, instance:tests.AddNewPayee@598067a5]" name="test02" duration-ms="1" started-at="2019-11-30T12:58:39Z" finished-at="2019-11-30T12:58:39Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [2] but found [1]]]>
+            </message>
             <full-stacktrace>
-              <![CDATA[java.lang.Exception
+              <![CDATA[java.lang.AssertionError: expected [2] but found [1]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:652)
+at org.testng.Assert.assertEquals(Assert.java:662)
 at tests.AddNewPayee.test02(AddNewPayee.java:58)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
@@ -244,11 +232,11 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.Exception -->
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test02 -->
-        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:tests.AddNewPayee@598067a5]" name="afterMethod" is-config="true" duration-ms="441" started-at="2019-11-20T08:46:28Z" finished-at="2019-11-20T08:46:28Z">
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:tests.AddNewPayee@598067a5]" name="afterMethod" is-config="true" duration-ms="401" started-at="2019-11-30T12:58:39Z" finished-at="2019-11-30T12:58:39Z">
           <params>
             <param index="0">
               <value>
@@ -259,15 +247,55 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:tests.AddNewPayee@598067a5]" name="afterTest" is-config="true" duration-ms="0" started-at="2019-11-20T08:46:28Z" finished-at="2019-11-20T08:46:28Z">
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:tests.AddNewPayee@598067a5]" name="afterTest" is-config="true" duration-ms="879" started-at="2019-11-30T12:58:39Z" finished-at="2019-11-30T12:58:40Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
-        <test-method status="PASS" signature="afterSuite()[pri:0, instance:tests.AddNewPayee@598067a5]" name="afterSuite" is-config="true" duration-ms="372" started-at="2019-11-20T08:46:29Z" finished-at="2019-11-20T08:46:29Z">
+      </class> <!-- tests.AddNewPayee -->
+    </test> <!-- AddNewPayee -->
+    <test name="MediaLinkVerification" duration-ms="5087" started-at="2019-11-30T12:58:40Z" finished-at="2019-11-30T12:58:45Z">
+      <class name="tests.MediaLinksVerfication">
+        <test-method status="PASS" signature="beforeSuite(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:tests.MediaLinksVerfication@4b952a2d]" name="beforeSuite" is-config="true" duration-ms="33227" started-at="2019-11-30T12:57:50Z" finished-at="2019-11-30T12:58:23Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[http://zero.webappsecurity.com]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[/pomframework/reports/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeSuite -->
+        <test-method status="PASS" signature="f()[pri:0, instance:tests.MediaLinksVerfication@4b952a2d]" name="f" duration-ms="5084" started-at="2019-11-30T12:58:40Z" finished-at="2019-11-30T12:58:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- f -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:tests.MediaLinksVerfication@4b952a2d]" name="afterMethod" is-config="true" duration-ms="1" started-at="2019-11-30T12:58:45Z" finished-at="2019-11-30T12:58:45Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=f status=SUCCESS method=MediaLinksVerfication.f()[pri:0, instance:tests.MediaLinksVerfication@4b952a2d] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="afterSuite()[pri:0, instance:tests.MediaLinksVerfication@4b952a2d]" name="afterSuite" is-config="true" duration-ms="1525" started-at="2019-11-30T12:58:45Z" finished-at="2019-11-30T12:58:47Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterSuite -->
-      </class> <!-- tests.AddNewPayee -->
-    </test> <!-- AddNewPayee -->
+      </class> <!-- tests.MediaLinksVerfication -->
+    </test> <!-- MediaLinkVerification -->
   </suite> <!-- Regression -->
 </testng-results>

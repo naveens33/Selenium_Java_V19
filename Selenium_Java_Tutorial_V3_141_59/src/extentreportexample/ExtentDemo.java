@@ -28,17 +28,18 @@ public class ExtentDemo {
 	public void beforeTest() {
 		//Configure the location to save the report
 		htmlReporter = new ExtentHtmlReporter(System.getProperty("user.dir") + "/test-output/TestReport.html");
-        // Create an object of Extent Reports
+		//Provide report properties like title, report name and theme
+		htmlReporter.config().setDocumentTitle("Test Report"); 
+		htmlReporter.config().setReportName("Zero Bank- Regression Test"); 
+		htmlReporter.config().setTheme(Theme.STANDARD);	
+		// Create an object of Extent Reports
 		report = new ExtentReports();
 		//Attach the ExtentHtmlReporter object to ExtentReports class and provide dashboard details
 		report.attachReporter(htmlReporter);
 		report.setSystemInfo("User Name", "Naveen S");
         report.setSystemInfo("Environment", "Production");
 		report.setSystemInfo("OS", "Windows 10");
-		//Provide report properties like title, report name and theme
-		htmlReporter.config().setDocumentTitle("Test Report"); 
-		htmlReporter.config().setReportName("Zero Bank- Regression Test"); 
-		htmlReporter.config().setTheme(Theme.STANDARD);			
+		
 	}
 	
 	public static String takeScreenShot(WebDriver driver, String screenshotName) throws IOException {

@@ -1,6 +1,7 @@
 package pages;
 
 import java.util.List;
+import java.util.Set;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -9,16 +10,12 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import base.BaseTest;
+
 public class BasePage {
 
-	public static WebDriver driver;
-	
-	BasePage(){}
-	
-	public BasePage(WebDriver driver)
-	{
-		BasePage.driver=driver;
-	}
+	public static WebDriver driver=BaseTest.driver;
+	public static String parentwindow;
 	
 	public void click(By locator)
 	{
@@ -71,5 +68,35 @@ public class BasePage {
 		}
 		
 		return null;
+	}
+
+	public void switchControlToWindowByTitle(String title) {
+		parentwindow=driver.getWindowHandle();
+		Set<String> handles= driver.getWindowHandles();
+		for(String handle:handles)
+		{
+			driver.switchTo().window(handle);
+			if(driver.getTitle().equals(title))
+			{
+				break;
+			}
+		}
+	}
+	
+	public boolean close()
+	{
+		Set<String> handles= driver.getWindowHandles();
+		if(handles.size()>1 && driver.getWindowHandle()!=parentwindow)
+		{
+			driver.close();
+			driver.switchTo().window(parentwindow);
+			return true;
+		}
+		else
+		{
+			driver.quit();
+			return false;
+		}
+		
 	}
 }

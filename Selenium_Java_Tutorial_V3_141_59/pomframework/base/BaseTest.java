@@ -28,11 +28,11 @@ import com.aventstack.extentreports.markuputils.MarkupHelper;
 
 public class BaseTest {
 	
-	public WebDriver driver;
-	public ExtentHtmlReporter htmlReporter;
-	public ExtentReports report;
-	public ExtentTest test;
-	public String reportpath;
+	public static WebDriver driver;
+	public static ExtentHtmlReporter htmlReporter;
+	public static ExtentReports report;
+	public static ExtentTest test;
+	public static String reportpath;
 	
 	
 	@Parameters({"browsername","url","reportpath"})
@@ -50,11 +50,6 @@ public class BaseTest {
 		Timestamp ts = new Timestamp(time);
 		reportpath=path+ts.toString().replace('-', '_').replace(' ', '_').replace(':', '_').replace('.', '_')+"/";
 		createReport();
-	}
-	
-	public WebDriver getDriver()
-	{
-		return driver;
 	}
 	
 	public void createReport() {
@@ -110,6 +105,6 @@ public class BaseTest {
 	public void afterSuite()
 	{
 		report.flush();
-		//driver.quit();
+		driver.quit();
 	}
 }

@@ -1,32 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite1]">
-  <parameter name="suite-param" value="suite level parameter"/>
-  <test thread-count="5" name="testcase1(failed)">
-    <classes>
-      <class name="testngsnippet.TestNgTestCase1">
-        <methods>
-          <include name="beforeClass"/>
-          <include name="f7"/>
-          <include name="beforeMethod"/>
-          <include name="afterTest"/>
-          <include name="afterClass"/>
-          <include name="beforeTest"/>
-          <include name="afterMethod"/>
-        </methods>
-      </class> <!-- testngsnippet.TestNgTestCase1 -->
-    </classes>
-  </test> <!-- testcase1(failed) -->
-  <test thread-count="5" name="testcase3(failed)">
+  <test thread-count="5" name="testcase2(failed)">
     <parameter name="searchterm" value="Account"/>
-    <parameter name="browsername" value="Chrome"/>
+    <parameter name="url" value="zerobank"/>
     <classes>
-      <class name="testngsnippet.TestNgPara">
+      <class name="testngsnippet.SampleTest">
         <methods>
           <include name="f"/>
           <include name="beforeClass"/>
         </methods>
-      </class> <!-- testngsnippet.TestNgPara -->
+      </class> <!-- testngsnippet.SampleTest -->
     </classes>
-  </test> <!-- testcase3(failed) -->
+  </test> <!-- testcase2(failed) -->
 </suite> <!-- Failed suite [Suite1] -->
