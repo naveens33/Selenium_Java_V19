@@ -14,7 +14,7 @@ import base.BaseTest;
 
 public class BasePage {
 
-	public static WebDriver driver=BaseTest.driver;
+	public WebDriver driver=BaseTest.driver;
 	public static String parentwindow;
 	
 	public void click(By locator)

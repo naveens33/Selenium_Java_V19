@@ -3,12 +3,17 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testngsnippet.SampleTest">
+      <class name="testng_snippets.TestCase1">
         <methods>
-          <include name="f"/>
+          <include name="afterClass"/>
+          <include name="beforeMethod"/>
           <include name="beforeClass"/>
+          <include name="beforeTest"/>
+          <include name="afterMethod"/>
+          <include name="test07"/>
+          <include name="afterTest"/>
         </methods>
-      </class> <!-- testngsnippet.SampleTest -->
+      </class> <!-- testng_snippets.TestCase1 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

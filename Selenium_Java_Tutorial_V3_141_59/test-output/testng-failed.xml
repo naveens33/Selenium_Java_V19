@@ -1,24 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Regression]">
-  <parameter name="reportpath" value="/pomframework/reports/"/>
-  <parameter name="browsername" value="chrome"/>
-  <parameter name="url" value="http://zero.webappsecurity.com"/>
-  <test thread-count="5" name="AddNewPayee(failed)">
-    <parameter name="password" value="password"/>
-    <parameter name="username" value="username"/>
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="tests.AddNewPayee">
+      <class name="testng_snippets.TestCase1">
         <methods>
-          <include name="afterMethod"/>
-          <include name="afterSuite"/>
-          <include name="afterTest"/>
-          <include name="beforeSuite"/>
-          <include name="beforeTest"/>
+          <include name="afterClass"/>
           <include name="beforeMethod"/>
-          <include name="test02"/>
+          <include name="beforeClass"/>
+          <include name="beforeTest"/>
+          <include name="afterMethod"/>
+          <include name="test07"/>
+          <include name="afterTest"/>
         </methods>
-      </class> <!-- tests.AddNewPayee -->
+      </class> <!-- testng_snippets.TestCase1 -->
     </classes>
-  </test> <!-- AddNewPayee(failed) -->
-</suite> <!-- Failed suite [Regression] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
