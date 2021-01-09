@@ -1,5 +1,7 @@
 package tests;
 
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
 import java.io.IOException;
 
 import org.testng.Assert;
@@ -13,7 +15,6 @@ import org.testng.annotations.Test;
 
 import base.BaseTest;
 import pages.AccountSummaryPage;
-import pages.BasePage;
 import pages.HomePage;
 import pages.LoginPage;
 import pages.LogoutPage;
@@ -32,7 +33,7 @@ public class AddNewPayee extends BaseTest {
 		home.clickSignInButton();
 		//Assert.assertEquals(driver.getTitle(), "Zero - Log in");
 		LoginPage login=new LoginPage();
-		Assert.assertEquals(login.getPageTitle(), "Zero - Log in");
+		AssertJUnit.assertEquals(login.getPageTitle(), "Zero - Log in");
 		login.doLogin("username", "password");
 		AccountSummaryPage accpage=new AccountSummaryPage();
 		accpage.navigateToTab("Pay Bills");	
@@ -55,7 +56,7 @@ public class AddNewPayee extends BaseTest {
 @Test
 public void test02() throws Exception {
 	test = report.createTest("Sample test");
-	Assert.assertEquals(1, 2);
+	AssertJUnit.assertEquals(1, 2);
 }
 
 

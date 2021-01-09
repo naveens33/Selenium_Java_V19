@@ -1,5 +1,7 @@
 package testngsnippet;
 
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -14,7 +16,7 @@ public class TestNGWithoutDataProvider {
 	    for(int i=0;i<3;i++)
 	    {
 	    	System.err.println(s[i][0]+"  "+s[i][1]);
-	    	Assert.assertTrue(s[i][0] < s[i][1]);   		
+	    	AssertJUnit.assertTrue(s[i][0] < s[i][1]);   		
 	    }
   }
 }

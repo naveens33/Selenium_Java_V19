@@ -1,5 +1,7 @@
 package testngsnippet;
 
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
 import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
@@ -9,7 +11,7 @@ public class TestNGWithDataProvider {
 	  public void f(Integer x,Integer y) {
 		 
 		    	System.err.println(x+" "+y);
-		    	Assert.assertTrue(x<y);   		
+		    	AssertJUnit.assertTrue(x<y);   		
 		   
 	  }
 	  

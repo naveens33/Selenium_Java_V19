@@ -1,5 +1,9 @@
 package testngexamples;
 
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.Test;
+import org.testng.annotations.BeforeClass;
+import org.testng.AssertJUnit;
 import org.testng.annotations.Test;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.AfterMethod;
@@ -45,7 +49,7 @@ public class AddNewPayeeScenario {
 		driver.findElement(By.id("add_new_payee")).click();
 		String confirmationmsg=wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("alert_content"))).getText();
 		//Assert.assertEquals(confirmationmsg, "The new payee sdfjg was successfully created.", "Validating confirmation msessage");
-		Assert.assertTrue(confirmationmsg.contains("Prem Kumar"), "Validating confirmation msessage");
+		AssertJUnit.assertTrue(confirmationmsg.contains("Prem Kumar"), "Validating confirmation msessage");
 	}
 
   @AfterMethod

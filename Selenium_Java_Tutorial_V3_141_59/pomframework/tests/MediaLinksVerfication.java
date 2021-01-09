@@ -1,5 +1,7 @@
 package tests;
 
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
 import org.openqa.selenium.By;
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -16,7 +18,7 @@ public class MediaLinksVerfication extends BaseTest{
 	  HomePage home=new HomePage();
 	  home.clickPrivacyLink();
 	  LegalPage legal=new LegalPage("Legal - About | Micro Focus");
-	  Assert.assertEquals("Legal - About | Micro Focus",legal.title);
-	  Assert.assertTrue(legal.close(),"Either only one window is available or you are trying to close the parent window");
+	  AssertJUnit.assertEquals("Legal - About | Micro Focus",legal.title);
+	  AssertJUnit.assertTrue(legal.close(),"Either only one window is available or you are trying to close the parent window");
   }
 }

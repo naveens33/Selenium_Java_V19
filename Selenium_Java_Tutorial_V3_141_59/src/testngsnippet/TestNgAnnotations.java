@@ -1,5 +1,9 @@
 package testngsnippet;
 
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.Test;
+import org.testng.annotations.BeforeClass;
+import org.testng.AssertJUnit;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 import org.testng.annotations.BeforeMethod;
@@ -63,7 +67,7 @@ public class TestNgAnnotations {
   @Test(enabled=false)
   public void f4() {
 	  SoftAssert obj=new SoftAssert();
-	  obj.assertEquals(5, 6);
+	  AssertJUnit.assertEquals(5, 6);
 	  System.out.println("-Test4");
   }  
   

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="testngexamples.AddNewPayeeScenario"/>
+      <class name="testngexamples.AccountSummaryLinkVerification"/>
+      <class name="testngsnippet.TestNgDataProvider"/>
+      <class name="tests.MediaLinksVerfication"/>
+      <class name="testngsnippet.TestNgAnnotations"/>
+      <class name="testngexamples.SearchScenario"/>
+      <class name="testngexamples.ParallelTestExecution"/>
+      <class name="junitsnippet.JUnitTC1"/>
+      <class name="junitsnippet.JUnitTC2"/>
+      <class name="junitsnippet.JUnitParaTestExplanation"/>
+      <class name="junitsnippet.JUnitTC3"/>
+      <class name="junitsnippet.JUnitAnnotations"/>
+      <class name="junitsnippet.JUnitParaTestReadExcel"/>
+      <class name="tests.AddNewPayee"/>
+      <class name="testngsnippet.TestNGWithoutDataProvider"/>
+      <class name="junittestexamples.SearchScenarioParam"/>
+      <class name="testng_examples.AddNewPayee"/>
+      <class name="junitsnippet.JUnitParaTest"/>
+      <class name="testng_snippets.TestCase3"/>
+      <class name="testngsnippet.TestNGWithDataProvider"/>
+      <class name="testng_snippets.TestCase1"/>
+      <class name="testngexamples.VerifyTooltip"/>
+      <class name="testngsnippet.DataProviderExcel"/>
+      <class name="testngexamples.ParallelExecutionMultipleBrowser"/>
+      <class name="testngsnippet.SampleTest"/>
+      <class name="testngsnippet.TestNgPara"/>
+      <class name="testngsnippet.TestNgTestCase2"/>
+      <class name="testngexamples.AddNewPayeeScenarioWithDataProviderExcel"/>
+      <class name="testngsnippet.TestNgTestCase1"/>
+      <class name="junittestexamples.AddNewPayeeScenario"/>
+      <class name="testngexamples.AddNewPayeeScenarioWithDataProvider"/>
+      <class name="junittestexamples.SearchScenario"/>
+      <class name="testng_snippets.TestCase4"/>
+      <class name="extentreportexample.ExtentDemo"/>
+      <class name="testng_snippets.TestCase5"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

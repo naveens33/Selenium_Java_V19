@@ -1,5 +1,8 @@
 package testngexamples;
 
+import org.testng.annotations.Test;
+import org.testng.annotations.BeforeClass;
+import org.testng.AssertJUnit;
 import java.io.IOException;
 import java.util.List;
 
@@ -13,7 +16,6 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
-import testng_snippets.ReadExcelData;
 
 public class SearchScenario {
 	
@@ -32,13 +34,13 @@ public class SearchScenario {
 		   driver.findElement(By.id("searchTerm")).sendKeys(term);
 		   driver.findElement(By.id("searchTerm")).sendKeys(Keys.ENTER);
 		   List<WebElement> elements=driver.findElements(By.xpath("//a[contains(text(),'Zero -')]"));
-		   Assert.assertEquals(elements.size(), Integer.parseInt(count));
+		   AssertJUnit.assertEquals(elements.size(), Integer.parseInt(count));
 	  }
 	  
 	  @DataProvider
 	  public Object[][] dp() throws IOException
 	  {
 		  ReadExcelData obj=new ReadExcelData();
-		  return obj.getData();
+		  return obj.getdata();
 	  }
 }

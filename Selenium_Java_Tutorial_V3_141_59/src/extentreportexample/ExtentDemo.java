@@ -1,4 +1,8 @@
 package extentreportexample;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.Test;
+import org.testng.annotations.BeforeClass;
+import org.testng.Assert;
 import java.io.File;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
@@ -19,8 +23,8 @@ import com.aventstack.extentreports.reporter.configuration.Theme;
 public class ExtentDemo {
 	
 	public static WebDriver driver;
-	public ExtentHtmlReporter htmlReporter;
 	public ExtentReports report;
+	public ExtentHtmlReporter htmlReporter;
 	public ExtentTest test;
 	
 
@@ -84,7 +88,7 @@ public class ExtentDemo {
 			//Calling takeScreenShot method to take screenshot
 			String screenshotpath = takeScreenShot(driver, result.getName());
 			//Add it in report using fail method and add screenshot using addScreenCaptureFromPath method
-			test.fail("Test Case Failed Snapshot is below " + test.addScreenCaptureFromPath(screenshotpath));
+			Assert.fail("Test Case Failed Snapshot is below " + test.addScreenCaptureFromPath(screenshotpath));
 		}
 		else if(result.getStatus() == ITestResult.SKIP){
 			test.log(Status.SKIP, MarkupHelper.createLabel(result.getName() + " - Test Case Skipped", ExtentColor.ORANGE)); 

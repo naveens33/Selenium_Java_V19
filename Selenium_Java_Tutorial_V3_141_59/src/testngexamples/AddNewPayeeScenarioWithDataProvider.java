@@ -1,5 +1,9 @@
 package testngexamples;
 
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.Test;
+import org.testng.annotations.BeforeClass;
+import org.testng.AssertJUnit;
 import org.testng.annotations.Test;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.DataProvider;
@@ -53,7 +57,7 @@ public class AddNewPayeeScenarioWithDataProvider {
 		driver.findElement(By.id("add_new_payee")).click();
 		String confirmationmsg=wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("alert_content"))).getText();
 		//Assert.assertEquals(confirmationmsg, "The new payee sdfjg was successfully created.", "Validating confirmation msessage");
-		Assert.assertTrue(confirmationmsg.contains(pname), "Validating confirmation msessage");
+		AssertJUnit.assertTrue(confirmationmsg.contains(pname), "Validating confirmation msessage");
 		
 		WebElement payeeele=wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("sp_payee")));
 		Select payee=new Select(payeeele);
@@ -67,7 +71,7 @@ public class AddNewPayeeScenarioWithDataProvider {
 		{
 			optionstext.add(option.getText());
 		}
-		Assert.assertTrue(optionstext.contains(pname),"Payee Name not found");
+		AssertJUnit.assertTrue(optionstext.contains(pname),"Payee Name not found");
 	}
 
   @AfterClass

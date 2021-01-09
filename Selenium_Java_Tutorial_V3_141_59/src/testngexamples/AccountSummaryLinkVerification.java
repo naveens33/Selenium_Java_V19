@@ -1,6 +1,8 @@
 package testngexamples;
 
 import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
+import org.testng.annotations.Test;
 
 
 import org.testng.annotations.BeforeMethod;
@@ -37,7 +39,7 @@ public class AccountSummaryLinkVerification {
 			driver.findElement(By.id("user_password")).sendKeys("password");
 			driver.findElement(By.name("submit")).click();
 			
-			Assert.assertEquals("Zero - Account Summary",driver.getTitle());
+			AssertJUnit.assertEquals("Zero - Account Summary",driver.getTitle());
 	  }
 	@Test(priority=1)
 	  public void verifyInvestmentAccountsLinks() {
@@ -48,7 +50,7 @@ public class AccountSummaryLinkVerification {
 	  WebElement accountele=wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("aa_accountId")));
 	  Select account=new Select(accountele);
 	  String selectedvalue=account.getFirstSelectedOption().getText();
-	  Assert.assertEquals("Brokerage",selectedvalue);
+	  AssertJUnit.assertEquals("Brokerage",selectedvalue);
 	}
 	
 	@Test(priority=2, dataProvider="Link")
@@ -60,7 +62,7 @@ public class AccountSummaryLinkVerification {
 	  WebElement accountele=wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("aa_accountId")));
 	  Select account=new Select(accountele);
 	  String selectedvalue=account.getFirstSelectedOption().getText();
-	  Assert.assertEquals(Link,selectedvalue);
+	  AssertJUnit.assertEquals(Link,selectedvalue);
 	}
 	
 	@Test(priority=3)
@@ -74,7 +76,7 @@ public class AccountSummaryLinkVerification {
 	  WebElement accountele=wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("aa_accountId")));
 	  Select account=new Select(accountele);
 	  String selectedvalue=account.getFirstSelectedOption().getText();
-	  Assert.assertEquals(Link,selectedvalue);
+	  AssertJUnit.assertEquals(Link,selectedvalue);
 	}
 	
   @BeforeMethod

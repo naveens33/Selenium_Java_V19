@@ -2,15 +2,16 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite1]">
   <test thread-count="5" name="testcase2(failed)">
-    <parameter name="searchterm" value="Account"/>
-    <parameter name="url" value="zerobank"/>
+    <parameter name="password" value="pword01"/>
+    <parameter name="username" value="test01uname"/>
     <classes>
-      <class name="testngsnippet.SampleTest">
+      <class name="testng_snippets.TestCase2">
         <methods>
-          <include name="f"/>
           <include name="beforeClass"/>
+          <include name="f"/>
+          <include name="beforeMethod"/>
         </methods>
-      </class> <!-- testngsnippet.SampleTest -->
+      </class> <!-- testng_snippets.TestCase2 -->
     </classes>
   </test> <!-- testcase2(failed) -->
 </suite> <!-- Failed suite [Suite1] -->

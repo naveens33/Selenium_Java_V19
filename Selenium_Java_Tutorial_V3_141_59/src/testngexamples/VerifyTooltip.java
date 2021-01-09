@@ -1,6 +1,8 @@
 package testngexamples;
 
 import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
+import org.testng.annotations.Test;
 
 
 import org.testng.annotations.BeforeMethod;
@@ -30,7 +32,7 @@ public class VerifyTooltip {
   public void LoginPageTooltip() {
 	  Actions action=new Actions(driver);
 	  action.moveToElement(driver.findElement(By.id("credentials"))).build().perform();
-	  Assert.assertEquals(driver.findElement(By.cssSelector(".tooltip-inner")).getText(),"Login/Password - username/password");
+	  AssertJUnit.assertEquals(driver.findElement(By.cssSelector(".tooltip-inner")).getText(),"Login/Password - username/password");
 	}
   @BeforeMethod
   public void beforeMethod() {
