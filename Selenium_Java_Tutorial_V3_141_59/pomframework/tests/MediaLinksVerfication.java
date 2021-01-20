@@ -19,6 +19,6 @@ public class MediaLinksVerfication extends BaseTest{
 	  home.clickPrivacyLink();
 	  LegalPage legal=new LegalPage("Legal - About | Micro Focus");
 	  AssertJUnit.assertEquals("Legal - About | Micro Focus",legal.title);
-	  AssertJUnit.assertTrue(legal.close(),"Either only one window is available or you are trying to close the parent window");
+	  //AssertJUnit.assertTrue(legal.close(),"Either only one window is available or you are trying to close the parent window");
   }
 }

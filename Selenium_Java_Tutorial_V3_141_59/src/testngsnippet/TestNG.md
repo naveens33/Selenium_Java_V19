@@ -38,3 +38,7 @@ Note: this attribute is ignored if invocationCount is not specified
 ### Types of Parameters in Dataprovider
 1. Method -If the SAME DataProvider should behave differently with different test method , use Method parameter.
 2. ITestContext - It can use to create different parameters for test cases based on groups.
+### @Factory vs @Dataprovider
+
+## TestNG Assertion
+### Hard vs Soft Assertion
